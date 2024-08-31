@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hangman Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="page">
+
+    <div id="myModal" class="modal">
+        <div class="modal-content-style">
+            <span class="close">&times;</span>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+
+    <h1 id="header" style="color: rgb(255, 0, 119); margin:6px;">&#127775; and Guess The Word! &#127775;</h1>
+    <p id="game-rule">Try to guess the correct word! you can guess wrong <span style="color: rgb(255, 0, 0); font-size: 30px;">5</span> times! careful not to strike the sixth time!</p>
+    <div class="grid-container">
+
+        <div><img src="images/man-normal.png" id="man" alt="Man" style="position: fixed; float: right; max-height: 75%; max-width: 100%;"></div>
+
+        <div id="game-container">
+            <div id="word"></div>
+            <div id="wrong-letters"></div>
+            <input type="text" id="letter-input" maxlength="1" placeholder="Enter a letter">
+            <button id="guess-button"><b>Guess</b></button>
+            <button id="restart-button"><b>Reroll</b></button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
